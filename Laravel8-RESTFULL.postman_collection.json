@@ -1,0 +1,516 @@
+{
+	"info": {
+		"_postman_id": "c46b5c15-018c-4071-ad7e-f9ff9c67915f",
+		"name": "Laravel8-RESTFULL",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "User-Index",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIzIiwianRpIjoiNWFjNGYyZWI1N2Y0MDUwMDI0M2RiMTk2NDBkZWY4ZmNlNjdhMmMwZDhkZjQwMWEwOWVlNGY4NjM1M2QzYjA2NzE0YzU3N2M3NjA5Zjc1YTUiLCJpYXQiOjE2MTg3NjA0OTUuNzM5MjU2LCJuYmYiOjE2MTg3NjA0OTUuNzM5MjY1LCJleHAiOjE2NTAyOTY0OTUuNzI4NTQxLCJzdWIiOiI0MSIsInNjb3BlcyI6W119.S8uQBTzDKqrpkqx86JYarlWnnfdheOVA9FKu0kHhBSg2PBp_7iMoRoZQYGMBBAUGNq4O4x5gJFH7OcFGX1hH2ZMfdd2EwZEXR968z-mluA0-_IrGRtUysBKS2WY2GtLmk-Vj9jiDdpuFphK3ne7RhZQQIk_eRp8PRsOf3dDzddphEnkUYGCT-SpPwWw9O6UAIvf_YuqxSQGNxfqfYS5iHOakQUUyyezdksj3eGQxswDZIwSPkabpeejJce_w0RV9tzlYZ2UHS6m03L0l1zVQXPYEwLmu465iIBe2iKNqf-6mWv9mWAJurSjION7cLxQfCl-IUljXVC7Qo8Wy-xm7oq4u3uEQgWaF_dWiYDnW4VyoUZsMyWBWd1jRlDnj6GIzkcU0aQ5j3T1WGBuSa3JclHbh3Vs60gqBOSWFgB06Xs8GQHgH3EhKVCRCmTKKHmr4jYCVx200UcVZ_xdLnQLtbzfH4vVV1WzGI2LKo7mihRQSzryGehdlnLDdshHf6wZHxco0tYIfw11EbkEk61rBAE1Om1m0hoGtxf7CaYNKU1VF1mfD-RgtapCjVhGbP9SU5o1i7ABfQAAL2Koe7PNiY9KM9iZukYRDarNuy-nk7pfmsZtGEuKWz49vn7YnnjVQNeVfPjuM3df7chRhzLwzlo9jIAsRu2Z7pCxe_876ap4",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/users/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"users",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User-Show",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/users/1",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"users",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User - Destroy",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/users/43",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"users",
+						"43"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User - Update",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "anang darmawan",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "email",
+							"value": "ananghd@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "password",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "password_confirmation",
+							"value": "password2",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "admin",
+							"value": "true",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/users/44",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"users",
+						"44"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User - Create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "anang",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "anang@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "ananghd@123",
+							"type": "text"
+						},
+						{
+							"key": "password_confirmation",
+							"value": "ananghd@123",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/users",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Status - All",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiODM4MDBmMjY0YzU4ZTFkZDVhNGNjYjNmMGMzN2NjMzRiMGM0ZTg0YTlmZWRkMTI2NjFjZWNlMGVlYjZiYjQ4MGJiYzg1NWYxMWI1NmQyZTUiLCJpYXQiOjE2MTg3NTYzODEuNDcwNjc3LCJuYmYiOjE2MTg3NTYzODEuNDcwNjg0LCJleHAiOjE2NTAyOTIzODEuNDE2MjE0LCJzdWIiOiIiLCJzY29wZXMiOltdfQ.agZZp_Yq6fdnvugsNiegbu3biHQPsmRW4cmICnLgYFjw_G9PTt50PnUFhVO2I2y6pSq7KqhZl9PslEj5QF4d3zEgOuwLwzVXKYjQ66LUt_AJbxsOr0yhlisWEtEO-wxiXwfKnBkNoHa6h7kXYBQ4dzB2liAuoE5oyhO6LzeImpsOKCSakoQcl0WakWne_qhjD-G12UVfzAllkdc8QR-D3u5aeU9ZBg3OlR5fwmk18cUd4AUguFOQo9K1DCQJS-H9X2WME41J4SzlIDcQavIMJsiojMHIMqdUrtHf3Ub4u7rE_4kPKTf19IdmadoXbckFBObObW2jIHK6Nv4cfThy0hkacBqhUOTwkbX7adufv9Ms6oTwFc_iDPHUAEohWL1zOvqeHdWLPZUJ0NE6DyzZLKMV4rOi6W-C9pUv-XcfMJIybNyqw4J2BtZBq50Sms8ghSlPOFjFi49yemSwhUAMvuk5ndWTQ6KUsJePFBBgUV-DOeIihG8KYTHqJY6p2Fq06ovoZwqgZRnDRsu8sFLAzWWL4nhAsES7gACiLzT8EKSMFNCasEo_7tKEyLLVfNW4eb0L6DlDSeK7skMxg79G7zYvn_3aMis4PAh3Z7tqe2R_bBZAXKvwXZJV3MhlN39TgyrfA8tY-JgTWZ4mCAsYjhoo5HtsfJsYymsuWdkwiFk",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "127.0.0.1:8000/api/status",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"status"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Status - Show",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "127.0.0.1:8000/api/status/41",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"status",
+						"41"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Status - Store",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "user_id",
+							"value": "1",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "status",
+							"value": "active",
+							"type": "text"
+						},
+						{
+							"key": "position",
+							"value": "posisiku enak",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "127.0.0.1:8000/api/status",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"status"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Status - update",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "user_id",
+							"value": "1",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "status",
+							"value": "inactive",
+							"type": "text"
+						},
+						{
+							"key": "position",
+							"value": "posisiku enak2",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "127.0.0.1:8000/api/status/41",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"status",
+						"41"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Status - destroy",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "127.0.0.1:8000/api/status/41",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"status",
+						"41"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "OAuth - Token - Client Credential",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "grant_type",
+							"value": "client_credentials",
+							"type": "text"
+						},
+						{
+							"key": "client_id",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "client_secret",
+							"value": "wLbLpOl76iAtVAdt1PRgr372724mkHBE0dshOhry",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/oauth/token",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"oauth",
+						"token"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "OAuth - Token - Password",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "grant_type",
+							"value": "password",
+							"type": "text"
+						},
+						{
+							"key": "client_id",
+							"value": "3",
+							"type": "text"
+						},
+						{
+							"key": "client_secret",
+							"value": "wr3LiEuUklF9CaGnthYjvAtBwRTCBCiZxo8nvNwI",
+							"type": "text"
+						},
+						{
+							"key": "username",
+							"value": "anang@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "ananghd@123",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/oauth/token",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"oauth",
+						"token"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "OAuth - Token - Reffresh Token",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "grant_type",
+							"value": "refresh_token",
+							"type": "text"
+						},
+						{
+							"key": "client_id",
+							"value": "3",
+							"type": "text"
+						},
+						{
+							"key": "client_secret",
+							"value": "wr3LiEuUklF9CaGnthYjvAtBwRTCBCiZxo8nvNwI",
+							"type": "text"
+						},
+						{
+							"key": "refresh_token",
+							"value": "def50200a39d476042d8adf7df47fd2427263739b80af1a51a59a1ee59d50891a489c3f0968443c9b7640bbcbac73a256a335b1359fabf02c50b12f86ef6b78bbbbfdbc98a46259042474aa28dec1c20d39fd7179c638c1125f1ed9e3bd993cd369f51130224373ba7019ecd15454499ca34a813e3bb110fd82573ff089c76462f16be11fae87c3e35229dd1dae49978be7577e5209ef5820e431e18df30aeff58e4d8520e314182cc6056c007fe809cb523bd31bbe51a070b31e8fd475a278695ebe085bc1a6fdf9d444c6bfd45ac1fbcb6edf870ec6c5a21ae1e20b081680f954212c4ad5aa85fa6c8945428d971bc5ee5f3de6e585c4d2fc22281d3683f334d0f015a9ac754a2ef2843ee487ffc7c3ae55c3f6dd0083111ca6d13895cd45d0e0c22ae410bdd9b5945386e0481f23fc43db4cad2b1d8b285a6c0c4ca3da2241854601250a717c864bdf0f6e4e894f4cae8fdacac17dbdd4e41f23dfa3e37b5f825",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/oauth/token",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"oauth",
+						"token"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
